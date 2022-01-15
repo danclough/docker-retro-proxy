@@ -1,4 +1,6 @@
 # Docker Retro Proxy
+[![build](https://github.com/danclough/docker-retro-proxy/actions/workflows/build.yaml/badge.svg)](https://github.com/danclough/docker-retro-proxy/actions/workflows/build.yaml)
+
 A Docker image for [DrKylstein's retro-proxy](https://github.com/DrKylstein/retro-proxy), a vintage-friendly proxy service.
 
 # Quick Start

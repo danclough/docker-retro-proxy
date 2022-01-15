@@ -1,11 +1,15 @@
 name: build
 
 on:
+  schedule:
+    - cron: '0 6 * * *'
   push:
     branches:
       - main
     tags:
       - v*
+    paths:
+      - 'Dockerfile'
   
   pull_request:
 
@@ -13,7 +17,7 @@ env:
   IMAGE_NAME: retro-proxy
 
 jobs:
-  docker:
+  build:
     runs-on: ubuntu-latest
     permissions:
       packages: write
